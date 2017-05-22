@@ -1,0 +1,26 @@
+    <!-- Intro Header -->
+    <header class="intro">
+        <div class="intro-body">
+                    <div class="col-md-24 col-md-offset-0">
+
+						<p>SpookRank's Current Movies: (Clickable)</p>
+                        <p>
+                        <div class="row col-md-offset-1">
+                        <div class="col-md-2 col-md-offset-0.75">The Silence of the Lambs</div>
+                        <div class="col-md-2 col-md-offset-0.75">The Texas Chainsaw Massacre</div>
+                        <div class="col-md-3 col-md-offset-0.5">The Shining</div>
+                        <div class="col-md-2 col-md-offset-0.75">Psycho</div>
+                        <div class="col-md-2 col-md-offset-0.75">The Exorcist</div>
+                        </div>
+                        <br/>
+                        <%= link_to image_tag("https://images-na.ssl-images-amazon.com/images/M/MV5BNjNhZTk0ZmEtNjJhMi00YzFlLWE1MmEtYzM1M2ZmMGMwMTU4XkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_SY1000_CR0,0,677,1000_AL_.jpg", height: 400), {:controller => "startup", :action => "movie1"} %>
+                        <%= link_to image_tag("https://images-na.ssl-images-amazon.com/images/M/MV5BZDI3OWE0ZWMtNGJjOS00N2E4LWFiOTAtZjQ4OTNiNzIwN2NkXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_.jpg", height: 400), {:controller => "startup", :action => "movie2"} %>
+                        <%= link_to image_tag("https://images-na.ssl-images-amazon.com/images/M/MV5BZWFlYmY2MGEtZjVkYS00YzU4LTg0YjQtYzY1ZGE3NTA5NGQxXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_.jpg", height: 400), {:controller => "startup", :action => "movie3"} %>
+                        <%= link_to image_tag("https://images-na.ssl-images-amazon.com/images/M/MV5BOWQ0MjRmZmUtY2Q2Yi00ODcxLWE4NGMtMTNjMDY1YmUzMjVkXkEyXkFqcGdeQXVyNjc1NTYyMjg@._V1_.jpg", height: 400), {:controller => "startup", :action => "movie4"} %>
+                        <%= link_to image_tag("https://images-na.ssl-images-amazon.com/images/M/MV5BYzczOGRlMzQtNDAzMS00MjdlLTk5Y2QtNTM3MDE3NjRkYzQwXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_.jpg", height: 400), {:controller => "startup", :action => "movie5"} %>
+                        </p>
+                        <%= link_to "", {:controller => "startup"}, :class => "btn btn-circle page-scroll"  %><br/>
+
+                    </div>
+        </div>
+    </header>

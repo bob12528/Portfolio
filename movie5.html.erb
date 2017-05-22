@@ -1,0 +1,32 @@
+    <!-- Intro Header -->
+    <header class="intro">
+        <div class="intro-body">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2">
+
+						<p>The Exorcist:<br/>
+                        <img src="https://images-na.ssl-images-amazon.com/images/M/MV5BYzczOGRlMzQtNDAzMS00MjdlLTk5Y2QtNTM3MDE3NjRkYzQwXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_.jpg" alt="Poster" height="400px"/>
+                        </p>
+                        <p>Synopsis (via imdb):<br/>
+                        When a teenage girl is possessed by a mysterious entity, her mother seeks the help of two priests to save her daughter. 
+                        </p>
+
+                        <%= link_to "View Ratings", {:controller => "startup", :action => "viewrating"}, :class => "btn btn-default btn-lg"  %>
+                        <% #new code for takehome final %>
+                        <%= link_to "View Comments", {:controller => "startup", :action => "viewcomment"}, :class => "btn btn-default btn-lg"  %>
+
+                        <br/>
+
+                        <%= link_to "Add A Rating", {:controller => "startup", :action => "addrating"}, :class => "btn btn-default btn-lg"  %>
+                        <% #new code for takehome final %>
+                        <%= link_to "Add A Comment", {:controller => "startup", :action => "addcomment"}, :class => "btn btn-default btn-lg"  %>
+                        <br/>
+
+                        <%= link_to "", {:controller => "startup"}, :class => "btn btn-circle page-scroll"  %><br/>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>

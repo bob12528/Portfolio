@@ -1,0 +1,31 @@
+<%= form_for (ranking), url: startup_new_path do |f| %>
+
+  <div class="field">
+    <%= f.label :"Which Movie?" %>
+    <% options = options_from_collection_for_select(@moviedata, 'id', 'name') %>
+    <%= f.select :id,  options %>
+  </div>
+
+  <div class="field">
+    <%= f.label :"Rate the movie's jump scares (Scale of 1-5)" %>
+    <%= f.number_field :jump, in: 1.0..5.0, step: 1 %>
+  </div>
+
+  <div class="field">
+    <%= f.label :"Rate the movie's level of psychological thrill (Scale of 1-5):" %>
+    <%= f.number_field :thrill, in: 1.0..5.0, step: 1 %>
+  </div>
+  
+  <div class="field">
+    <%= f.label :"Rate the movie's special effect quality (Scale of 1-5):" %>
+    <%= f.number_field :sfx, in: 1.0..5.0, step: 1 %>
+  </div>  
+    <div class="field">
+    <%= f.label :"Rate the movie's overall watchability (Scale of 1-5):" %>
+    <%= f.number_field :rating, in: 1.0..5.0, step: 1 %>
+  </div>  
+
+  <div class="actions">
+    <%= f.submit "Add a Rating", :class => "btn btn-default btn-lg" %>
+  </div>
+<% end %>

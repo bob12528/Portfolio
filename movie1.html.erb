@@ -1,0 +1,31 @@
+    <!-- Intro Header -->
+    <header class="intro">
+        <div class="intro-body">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2">
+
+						<p>The Silence of the Lambs:<br/>
+                        <img src="https://images-na.ssl-images-amazon.com/images/M/MV5BNjNhZTk0ZmEtNjJhMi00YzFlLWE1MmEtYzM1M2ZmMGMwMTU4XkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_SY1000_CR0,0,677,1000_AL_.jpg" alt="Poster" height="400px"/>
+                        </p>
+                        <p>Synopsis (via imdb):<br/>
+                        A young F.B.I. cadet must confide in an incarcerated and manipulative killer to receive his help on catching another serial killer who skins his victims. </p>
+
+                        <%= link_to "View Ratings", {:controller => "startup", :action => "viewrating"}, :class => "btn btn-default btn-lg"  %>
+                        <% #new code for takehome final %>
+                        <%= link_to "View Comments", {:controller => "startup", :action => "viewcomment"}, :class => "btn btn-default btn-lg"  %>
+
+                        <br/>
+
+                        <%= link_to "Add A Rating", {:controller => "startup", :action => "addrating"}, :class => "btn btn-default btn-lg"  %>
+                        <% #new code for takehome final %>
+                        <%= link_to "Add A Comment", {:controller => "startup", :action => "addcomment"}, :class => "btn btn-default btn-lg"  %>
+                        <br/>
+                        <%= link_to "", {:controller => "startup"}, :class => "btn btn-circle page-scroll"  %><br/>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
